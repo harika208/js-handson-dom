@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <b>1. Write the code to access element which is having id as "text".</b> <br>
+    
+    <div id ="text">Welcome to prepbytes</div>
+    const call = document.getElementById("text");
+    console.log(call.innerText);
+<br>
+    output:- Welcome to prepbytes
+<br><br>
+    <b>2. Write the code to access element which is having tag as h1.</b><br>
+
+
+    <!-- <h1>hi</h1>
+    <h1>hello</h1>
+    <h1>hello prepbytes</h1>
+    <h1>hello delhii</h1> -->
+
+    const element = document.getElementsByTagName('h1');
+    console.log(element);
+    <pre>
+    output:-hi
+            hello
+            hello prepbytes
+            hello delhi
+        </pre>
+
+    <b>3. Write the code to access element which is having class as box. </b> <br>
+
+ 
+    const element = document.getElementsByClassName('box');
+<br><br>
+        <b>4. Change the heading from "Hello" to "Hello world" using DOM functions</b>
+        <h1>Hello</h1>
+
+       const element = document.getElementsByClassName('h1'); <br>
+       element.innerHTML = "Hello World";
+       
+       <br><br>
+<b>5. Create three cards on HTML page and arrange them using flex property in row
+         or horizontal direction and also create button at the bottom named "Change 
+         Flex direction". When user clicks on this button, the cards arrangement
+          should be changed to vertical direction.</b>
+<div class="parent">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+</div>
+<button onclick="changeDirection()">Change Direction</button>
+<br><br>
+
+<b>6.What is the difference between window vs document? </b> <br>   
+<b>document:</b>
+It Executes when HTML-Document is loaded and DOM is ready.
+<br><br>
+<b>window:</b> It executes when complete page is fully loaded including all 
+frames, objects and images
+
+<br><br>
+
+<b>7. 
+     Add one style attribute and give text color as red and id attribute and give the
+     id value as ""heading"" in the above given h1 tag using DOM functions</b><br>
+
+     <h2>Hello </h2>
+
+
+<b>8.Create an HTML page having content as Hello world and a button named Replace 
+    Text. When user will click on this button page content should be changed to 
+    "Welcome to Elevation academy"</b> <br>
+    
+    <h1 class ="replace">Hello World</h1>
+    <button onclick="change()">Relace Text</button>
+    <br><br>
+
+<b>9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time
+     should keep updating every second</b><br><br>
+     <div class="parent1">
+        <span class="hours"></span>
+        <span class="mins"></span>
+        <span class="secs"></span>
+     </div>
+<br><br>
+<b>10. Create a select drop down for selecting Year 20-21, 21-22 etc. Print the 
+    item text selected</b>
+
+
+    <form action="">
+        <label for="">Year : </label>
+        <select name="" id="year1">
+            <option value="2020-2021">2020-2021</option>
+            <option value="2021-2022">2021-2022</option>
+            <option value="2022-2023">2022-2023</option>
+            <option value="2023-2024">2023-2024</option>
+        </select>
+    </form>
+    <button onclick="year()">submit</button>
+    <div class="newyear"></div>
+
+    <script src = "./index.js"></script>
+</body>
+</html>
